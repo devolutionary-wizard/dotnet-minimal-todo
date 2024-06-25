@@ -1,0 +1,12 @@
+//Get Todo
+GET http://localhost:5050/todos HTTP/1.1
+
+//Create Todo
+POST http://localhost:5050/todos HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "New Todo Item",
+  "description": "Description of the new todo item",
+  "isComplete": false
+}
